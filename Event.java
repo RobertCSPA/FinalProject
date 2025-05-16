@@ -3,7 +3,7 @@ class Event{
     private int month;
     private int year;
     private String name;
-    public Event(int d, int m, int y, String n){
+    public Event(int m, int d, int y, String n){
         day = d;
         month = m;
         year = y;
@@ -32,5 +32,8 @@ class Event{
     }
     public void setYear(int y){
         year = y;
+    }
+    public String toString(){
+        return "event: " + name + ", time: " + month + "/" + day + "/" + year;
     }
 }
