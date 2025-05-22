@@ -6,6 +6,7 @@ public class Main{
         eventList.add(new Event(1,8,2025,"hang out"));
         eventList.add(new Event(3,22,2025,"meeting"));
         ArrayList<Event> sortedEventList = new ArrayList<Event>();
+        
         while(eventList.size() != 0){
             Event nearest = eventList.get(0);
             int index = 0;
