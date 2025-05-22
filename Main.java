@@ -27,8 +27,5 @@ public class Main{
             sortedEventList.add(nearest);
             eventList.remove(index);
         }
-        for(int i = 0; i < sortedEventList.size(); i++){
-            System.out.println(sortedEventList.get(i));
-        }
     }
 }
