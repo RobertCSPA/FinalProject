@@ -21,18 +21,7 @@ class Event{
     public int getYear(){
         return year;
     }
-    public void setName(String s){
-        name = s;
-    }
-    public void setDay(int d){
-        day = d;
-    }
-    public void setMonth(int m){
-        month = m;
-    }
-    public void setYear(int y){
-        year = y;
-    }
+
     public String toString(){
         return "event: " + name + ", time: " + month + "/" + day + "/" + year;
     }
