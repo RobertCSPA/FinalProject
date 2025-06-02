@@ -8,7 +8,7 @@ public class Main{
         while (true){
 
             Scanner s = new Scanner(System.in);
-            System.out.println("What would you like to do?: ");
+            System.out.print("What would you like to do?: ");
             String request = s.nextLine();
 
             if(request.equals("make a new event")){
@@ -18,6 +18,7 @@ public class Main{
                 int day = s.nextInt();
                 System.out.print("year:");
                 int year = s.nextInt();
+                s.nextLine();
                 System.out.print("name: ");
                 String name = s.nextLine();
                 Event ev = new Event(month, day, year, name);
@@ -44,6 +45,7 @@ public class Main{
                 System.out.print("year: ");
                 int year = s.nextInt();
                 System.out.print("name: ");
+                s.nextLine();
                 String name = s.nextLine();
                 System.out.print("reason: ");
                 String reason = s.nextLine();
@@ -71,7 +73,7 @@ public class Main{
                     String name = s.nextLine();
                     boolean dne = true;
                     for (Event e:eventList){
-                        if (e.getName().indexOf(name)!=0){
+                        if (e.getName().indexOf(name)!=-1){
                             System.out.println(e);
                             dne = false;
                         }
@@ -86,7 +88,7 @@ public class Main{
                     }
                     if(dne2)System.out.println("no such event exists with that name in the important events");
                 }
-                else{
+                else if(method.equals("date")){
                     System.out.print("what is the month of the event?: ");
                     int month = s.nextInt();
                     System.out.print("what is the day of the event?: ");
