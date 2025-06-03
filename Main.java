@@ -10,6 +10,14 @@ public class Main{
         while (true){
 
             Scanner s = new Scanner(System.in);
+            System.out.println("type 1 to create a new normal event");
+            System.out.println("type 2 to create a new important event");
+            System.out.println("type 3 to create search for an event");
+            System.out.println("type 4 to remove a normal event");
+            System.out.println("type 5 to remove an important event");
+            System.out.println("type 6 to print out a list of all normal events");
+            System.out.println("type 7 to print out a list of all important events");
+            System.out.println("type 8 to end the program");
             System.out.print("What would you like to do?: ");
             String request = s.nextLine();
 
@@ -140,7 +148,6 @@ public class Main{
             }
 
             if(request.equals("8")){
-                s.close();
                 System.out.println("program has ended");
                 break;
             }
