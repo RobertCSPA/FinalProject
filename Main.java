@@ -13,7 +13,7 @@ public class Main{
             System.out.print("What would you like to do?: ");
             String request = s.nextLine();
 
-            if(request.equals("make a new event")){
+            if(request.equals("1")){
                 System.out.print("month: ");
                 int month = s.nextInt();
                 System.out.print("day: ");
@@ -39,7 +39,7 @@ public class Main{
                 }
             }
 
-            if(request.equals("make a new important event")){
+            if(request.equals("2")){
                 System.out.print("month: ");
                 int month = s.nextInt();
                 System.out.print("day: ");
@@ -67,7 +67,7 @@ public class Main{
                     }
                 }
 
-            if (request.equals("search event")){
+            if (request.equals("3")){
                 System.out.print("how would you like to search: ");
                 String method = s.nextLine();
                 if(method.equals("name")){
@@ -120,23 +120,29 @@ public class Main{
                 }
             }
 
-            if(request.equals("remove normal")){
+            if(request.equals("4")){
                 System.out.print("which element would you like to remove: ");
                 int index = s.nextInt();
                 eventList.remove(index);
             }
 
-            if(request.equals("remove important")){
+            if(request.equals("5")){
                 System.out.print("which element would you like to remove: ");
                 int index = s.nextInt();
                 importantEventList.remove(index);
             }
 
-            if(request.equals("print events")){
+            if(request.equals("6")){
                 for(Event e : eventList) System.out.println(e);
             }
-            if(request.equals("print important")){
+            if(request.equals("7")){
                 for(ImportantEvent e : importantEventList) System.out.println(e);
+            }
+
+            if(request.equals("8")){
+                s.close();
+                System.out.println("program has ended");
+                break;
             }
         }
     }
