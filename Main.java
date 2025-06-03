@@ -1,5 +1,7 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.ArrayList; //imported ArrayList library for Events and ImportantEvents
+import java.util.Scanner; //imported Scanner library to take in user input
+// ArrayList constructor, add, remove, size and get functions used
+// Scanner constructor, nextLine and nextInt functions used
 public class Main{
     public static void main(String[] args) {
         ArrayList<Event> eventList = new ArrayList<Event>();
