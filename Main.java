@@ -76,9 +76,11 @@ public class Main{
                 }
 
             if (request.equals("3")){
+                System.out.println("type 1 to search by name");
+                System.out.println("type 2 to search by date");
                 System.out.print("how would you like to search: ");
                 String method = s.nextLine();
-                if(method.equals("name")){
+                if(method.equals("1")){
                     System.out.print("what is the name of the event?: ");
                     String name = s.nextLine();
                     boolean dne = true;
@@ -98,7 +100,7 @@ public class Main{
                     }
                     if(dne2)System.out.println("no such event exists with that name in the important events");
                 }
-                else if(method.equals("date")){
+                else if(method.equals("2")){
                     System.out.print("what is the month of the event?: ");
                     int month = s.nextInt();
                     System.out.print("what is the day of the event?: ");
